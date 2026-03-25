@@ -1,9 +1,9 @@
 # Avaliação — Engenharia de Software
 **Sistema Integrado de Gestão de Farmácia — MVP Definido pelo Estudante**
 
-Aluno: *Preencha aqui*  
-RA: *Preencha aqui*  
-Data: *Preencha aqui*  
+Aluno: Eduardo Henrique Nascimento de Lima 
+RA: 25000642  
+Data: 25 de março de 2026  
 
 ---
 
