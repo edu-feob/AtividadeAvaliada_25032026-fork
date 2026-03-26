@@ -10,15 +10,30 @@ Data: 25 de março de 2026
 ---
 
 # 1. Definição do MVP
-Descreva aqui **qual parte do sistema** foi incluída no seu MVP.  
-Explique claramente:
 
-- O que está **dentro** do MVP  
-- O que está **fora** do MVP  
-- Por que você fez essas escolhas  
+Meu MVP cobre o processo de venda, desde a identificação do cliente ou o devido cadastro. Incluin a verificação de estoque, tratamento de venda a prazo com registro em contas a receber e as contas a pagar.
 
-Exemplo de início:  
-> “Meu MVP cobre o processo de venda desde a identificação/cadastro do cliente até a emissão do comprovante, incluindo tratamento de estoque insuficiente.”
+## O que está dentro do MVP
+
+- UC01 — Realizar uma venda: função principal do sistema
+- UC02 — Verificar o estoque: processo obrigatório para que a compra seja concluída
+- UC03 — Identificar o cliente no sistema: necessário para realizar a venda
+- UC04 — Registro das contas a receber: necessário para realizar as vendas a prazo
+- UC05 — Realizar o Cadastro dos clientes: necessário quando o cliente não possuir identificação no sistema
+
+## O que está fora do MVP
+
+- UC06 — Registro de compra de um fornecedor
+- UC07 — Atualização do estoque
+- UC08 — Lançamento das contas a pagar
+- UC09 — Consultar os relatórios gerados
+- UC10 — Gerenciar os usuários e as devidas permissões
+
+## Por que essas escolhas foram feitas?
+
+A venda é o processo principal da farmácia. Sem ele, o sistema não possui utilidade no dia a dia. Por isso, o MVP foi construído em torno desse fluxo, garantindo que o atendente consiga realizar uma venda completa.
+
+Os processos de compra, financeiro e relatórios foram mantidos fora do MVP pois o escopo desta avaliação foca no fluxo principal de atendimento e vendas de produto(s) ao cliente. Esses processos seriam implementados em outros momentos ao projeto.
 
 ---
 
@@ -59,40 +74,12 @@ Liste os RNFs do sistema conforme seu MVP.
 
 # 5. Casos de Uso (mínimo: 10)
 ### Inserir **diagrama de casos de uso geral**, demonstrando claramente:
-- os 10 casos
-- relação entre eles e atores
-- pelo menos 3 includes
-- pelo menos 3 extends
+
+<img width="619" height="1047" alt="image" src="https://github.com/user-attachments/assets/e04a077e-73bc-43e7-bf0d-4043288e03ca" />
 
 ---
 
 # 6. Documentação dos Casos de Uso
-Para **cada caso de uso**, utilize o template abaixo:
----
-
-## **UCXX — Nome do Caso de Uso**
-**Ator(es):**  
-**Descrição:**  
-**Pré-condições:**  
-**Pós-condições:**  
-
-### Fluxo Principal
-1.  
-2.  
-3.  
-4.  
-
-### Fluxos Alternativos / Exceções
-- FA01 —  
-- FA02 —  
-
-### Relacionamentos
-- **Include:** (listar quando aplicável)  
-- **Extend:** (listar quando aplicável)  
-
-### Inserir o diagrama de atividades do Caso de Uso, demonstrando tudo o fluxo princial e alternativos/exceções.
-> Repita essa estrutura para **todos os seus casos de uso** (mínimo 10).
-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## **UC01 — Realizar uma venda**
 **Ator(es): Atendente**  
@@ -115,6 +102,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 - **Include: UC02, UC03**  
 - **Extend: UC04** 
 
+<img width="689" height="650" alt="image" src="https://github.com/user-attachments/assets/69485832-cce7-4385-95a5-b9214114ea13" />
+
 ---
 
 ## **UC02 — Verificar o estoque**
@@ -134,6 +123,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 ### Relacionamentos
 - **Include:**  
 - **Extend:**
+
+<img width="537" height="450" alt="image" src="https://github.com/user-attachments/assets/e8a1dba5-4598-43b4-bce6-bd7fe4d9cbf6" />
 
 ---
 
@@ -156,6 +147,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 - **Include:**  
 - **Extend: UC05**
 
+<img width="637" height="392" alt="image" src="https://github.com/user-attachments/assets/ebf17644-0ae6-4c3b-85a2-533ea2950972" />
+
 ---
 
 ## **UC04 — Registro das contas a receber**
@@ -176,6 +169,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 - **Include:**  
 - **Extend:**
 
+<img width="561" height="282" alt="image" src="https://github.com/user-attachments/assets/9cd34dd1-475e-4518-9527-18fdd6f88d22" />
+
 ---
 
 ## **UC05 — Realizar o Cadastro dos clientes**
@@ -195,6 +190,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 ### Relacionamentos
 - **Include:**  
 - **Extend:**
+
+<img width="570" height="392" alt="image" src="https://github.com/user-attachments/assets/b90bbe58-aee8-4517-bd47-a4b4e907124c" />
 
 ---
 
@@ -217,6 +214,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 - **Include: UC07**  
 - **Extend: UC08**
 
+<img width="399" height="466" alt="image" src="https://github.com/user-attachments/assets/75388820-0d42-490a-9386-e774b2d2c8b0" />
+
 ---
 
 ## **UC07 — Atualização do estoque**
@@ -235,6 +234,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 ### Relacionamentos
 - **Include:**  
 - **Extend:**
+
+<img width="275" height="356" alt="image" src="https://github.com/user-attachments/assets/c0639949-680b-40b0-9221-cc45685ea899" />
 
 ---
 
@@ -256,6 +257,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 - **Include:**  
 - **Extend:**
 
+<img width="466" height="352" alt="image" src="https://github.com/user-attachments/assets/e2569355-508c-4bba-a038-3999b2d5a503" />
+
 ---
 
 ## **UC09 — Consultar os relatórios gerados**
@@ -275,6 +278,8 @@ Para **cada caso de uso**, utilize o template abaixo:
 ### Relacionamentos
 - **Include:**  
 - **Extend:**
+
+<img width="468" height="337" alt="image" src="https://github.com/user-attachments/assets/dbacd285-b762-4a1e-bf5e-878c457b524f" />
 
 ---
 
@@ -296,3 +301,5 @@ Para **cada caso de uso**, utilize o template abaixo:
 ### Relacionamentos
 - **Include:**  
 - **Extend:**
+
+<img width="497" height="367" alt="image" src="https://github.com/user-attachments/assets/eb6030b5-6377-431d-9f0d-603f4e71732c" />
